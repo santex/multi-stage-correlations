@@ -1,0 +1,6 @@
+@relation data
+@attribute X real
+@attribute Y real
+@attribute Z real
+@attribute W real
+@data

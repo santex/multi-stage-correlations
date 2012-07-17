@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Welcome to Quant-tools Business Solutions</title>
+    <link rel="stylesheet" type="text/css" href="http://localhost/qt/css/bizsol3.css" />
+    <style>
+    	body{background-image:none; background-color:#ffffff;}
+
+    </style>
+</head>
+<body>
+<blockquote>
+<br />
+<div style="background: none repeat scroll 0% 0% rgb(153, 192, 192); width: 95%;">
+<strong>&nbsp;&nbsp;&nbsp;High Level Dimensions</strong> (<i>&raquo;time, &raquo;gain, &raquo;depth, &raquo;indicator, &raquo;two in one)</i>
+</div>
+<br>
+<div  id="dimensions" class="left">
+<label for="dimensions"><strong >Simple 3 Level Dimensions</strong></label>
+<img src="https://chart.googleapis.com/chart?cht=s&chd=s:984sttvuvkQIBLKNCAIi,DEJPgq0uov17zwopQODS,AFLPTXaflptx159gsDrn&chxt=x,y,r&chxr=0,0,1000000,250000|1,0,60|2,0,5000&chxs=0N*e*,000000|1N*cUSD*Mil,FF0000|2N*sz2*,0000FF&chs=340x180" />
+</div>
+
+<br />
+</blockquote>
+<table><tr><td>
+<div class="left">
+<span>Do somthing like:</span>
+<ul>
+<li>Step 1:choose dimensions</li>    
+<li>Step 2:make a data file</li>
+<li>Step 3:plot your data file</li>
+<li>Step 4:choose result form</li>
+<li>Step 5:download results</li>
+</ul>
+</div>
+</td><td>
+<div class="right">
+<span>Or somthing like that:</span>
+<ul>
+<li>Step 1:upload portfolio csv</li>    
+<li>Step 2:compare dayly</li>    
+<li>Step 5:download performance hirarcy</li>
+<li>Step 5:download symbols flow <br />
+
+</ul>
+</div>
+</td><td>
+<div class="left">
+<div>Real Live examples:</div>
+<ul>
+<li><a href="http://localhost/qt/images/examples/gallary_0.png">Example 1</a></li>
+<li><a href="http://localhost/qt/images/examples/gallary_1.png">Example 2</a></li>
+<li><a href="http://localhost/qt/images/examples/gallary_2.png">Example 3</a></li>
+<li><a href="http://localhost/qt/images/examples/gallary_3.png">Example 4</a></li>
+<li><a href="http://localhost/qt/images/examples/gallary_4.png">Example 5</a></li>   
+</ul>
+
+</div>
+</td></tr></table>
+<p><br /><br /></p>
+
+
+<blockquote>
+<div style="background: none repeat scroll 0% 0% rgb(153, 192, 192); width: 95%;">
+<strong>&nbsp;&nbsp;&nbsp;Data suitable for Multistage Correlation sampling Used in data file</strong></div>
+
+<br />
+<table width=100% cellpading=1 border=1 align="left">
+<tbody  valign='top'>
+<tr><td valign='top' colspan=3>
+</strong>
+</p></td></tr>
+<tr><td valign='top'><div>
+<ul>
+<li>1y fwd P/E</li>
+<li>Quote change (%)</li>
+<li>Price to book</li>
+<li>Price to sales</li>
+<li>Last price</li>
+<li>EPS</li>
+</ul>
+</div>
+</td>
+<td>
+<div>
+<ul>
+<li>LT debt/assets (Recent yr) (%)</li>
+<li>LT debt/assets (Recent qtr) (%)</li>
+<li>Total debt/assets (Recent yr) (%)</li>
+<li>Total debt/assets (Recent qtr) (%)</li>
+<li>LT debt/equity (Recent yr) (%)</li>
+<li>LT debt/equity (Recent qtr) (%)</li>
+<li>Total debt/equity (Recent yr) (%)</li>
+<li>Total debt/equity (Recent qtr) (%)</li>
+<li>Interest coverage</li>
+</ul>
+</div>
+</td>
+<td>
+
+<div>
+<ul>
+<li>Gross margin (%)</li>
+<li>EBITDA margin (%)</li>
+<li>Operating margin (%)</li>
+<li>Net profit margin (%)</li>
+<li>5y net income growth rate</li>
+<li>5y revenue growth rate</li>
+<li>10y revenue growth rate</li>
+<li>5y EPS growth rate</li>
+<li>10y EPS growth rate</li>
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div>
+<ul>
+<li>Div recent quarter</li>
+<li>Div next quarter</li>
+<li>Div per share (Recent yr)</li>
+<li>Div rate indicated annual</li>
+<li>Div per share</li>
+<li>Div yield (%)</li>
+<li>Div from cash flow</li>
+<li>Book value/share</li>
+<li>Cash/share</li>
+<li>Current ratio</li>
+</ul>
+</div>
+</td>
+<td>
+<div class='left'>
+<ul><li>Beta</li>
+<li>Float</li>
+<li>Institutional percent held</li>
+<li>Volume</li>
+<li>Average volume</li></ul>
+</div>
+</td>
+<td>
+<div >
+<ul>
+<li>Return on investment (TTM) (%)</li>
+<li>Return on investment (5 yr avg) (%)</li>
+<li>Return on investment (Recent yr) (%)</li>
+<li>Return on assets (TTM) (%)</li>
+<li>Return on assets (5 yr avg) (%)</li>
+<li>Return on assets (Recent yr) (%)</li>
+<li>Return on equity (TTM) (%)</li>
+<li>Return on equity (5 yr avg) (%)</li>
+<li>Return on equity (Recent yr) (%)</li></ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td colspan=3>
+<div class="left">
+<ul><li>Quote change (%)</li>
+<li>52w high</li>
+<li>52w low</li>
+<li>52w price change (%)</li>
+<li>50d avg price</li>
+<li>150d avg price</li>
+<li>200d avg price</li>
+<li>13w price change (%)</li>
+<li>26w price change (%)</li>
+<li>Market cap</li>
+<li>P/E ratio</li>
+<li>1y fwd P/E</li>
+</ul>
+</div>
+</td>
+</tr>
+
+</tbody></table>
+</div>   
+</blockquote>
+
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to Quant-tools Business Solutions</title>
+    <link rel="stylesheet" type="text/css" href="http://localhost/qt/css/bizsol3.css" />
+
+<style type="text/css">
+.qnt-spinner {
+  display: none;
+  padding-right: 8px;
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+}
+
+.qnt-buttons {
+  float: right;
+}
+
+.qnt-view {
+  clear: both;
+}
+
+.qnt-header-text {
+  float: left;
+}
+
+.qnt-offset-label {
+  padding: 0 8px;
+  font-weight: bold;
+}
+
+.qnt-icon {
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+  background-image: url(../images/pagedpicker_icons.gif);
+  background-repeat: no-repeat;
+}
+
+.qnt-first-icon {
+  background-position: 0 0;
+}
+
+.qnt-custom-button-active .qnt-first-icon {
+  background-position: 0 -16px;
+}
+
+.qnt-previous-icon {
+  background-position: -16px 0;
+}
+
+.qnt-custom-button-active .qnt-previous-icon {
+  background-position: -16px -16px;
+}
+
+.qnt-next-icon {
+  background-position: -32px 0;
+}
+
+.qnt-custom-button-active .qnt-next-icon {
+  background-position: -32px -16px;
+}
+
+.qnt-last-icon {
+  background-position: -48px 0;
+}
+
+.qnt-custom-button-active .qnt-last-icon {
+  background-position: -48px -16px;
+}
+
+.qnt-icon-view-icon {
+  background-position: -64px 0;
+}
+
+.qnt-custom-button-active .qnt-icon-view-icon,
+.qnt-custom-button-checked .qnt-icon-view-icon {
+  background-position: -64px -16px;
+}
+
+.qnt-list-view-icon {
+  background-position: -80px 0;
+}
+
+.qnt-custom-button-active .qnt-list-view-icon,
+.qnt-custom-button-checked .qnt-list-view-icon {
+  background-position: -80px -16px;
+}
+
+.qnt-pagetemplate {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  height: 165px;
+}
+
+.qnt {
+  margin: 5px 0;
+  outline: none;
+}
+
+.qnt-msg {
+  color: #444;
+  font-style: italic;
+}
+
+.qnt-error {
+  color: red;
+  font-weight: bold;
+  border: 1px solid red;
+  padding: 5px;
+}
+
+.qnt-item {
+  float: left;
+  width: 130px;
+  margin: 5px;
+  text-align: center;
+  border: 2px solid #eeeeee;
+}
+
+.qnticon {
+  height: 52px;
+  padding: 5px 5px 3px;
+}
+
+.qnticon img {
+  height: 48px;
+  width: 48px;
+}
+
+.qnt-item-title {
+  padding: 5px;
+  overflow: hidden;
+}
+
+.qnt-item-hover {
+  border: 2px solid #8ae;
+}
+
+.qnt-item-selected {
+  border: 2px solid #68e;
+}
+
+.qnt-item-selected .qnt-item-title {
+  background-color: #68e;
+  color: white;
+  font-weight: bold;
+}
+
+
+.qnt-listpicker {
+  margin: 5px 0;
+}
+
+.qnt-listpicker-items {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.qnt-listpicker-msg {
+  color: #888;
+}
+
+.qnt-listpicker-error {
+  color: red;
+  font-weight: bold;
+  border: 1px solid red;
+  padding: 5px;
+}
+
+.qnt-listpicker-item {
+  border-top: 1px solid #eeeeee;
+  padding: 1px 2px 2px;
+  width: 100%;
+}
+
+.qnt-listpicker-item-icon {
+  float: left;
+  padding: 5px;
+}
+
+.qnt-listpicker-item-title {
+  padding: 5px;
+  font-weight: bold;
+  color: #666;
+}
+
+.qnt-listpicker-item-description {
+  padding: 5px;
+}
+
+.qnt-listpicker-item-hover {
+  background-color: #fff8c0;
+}
+
+.qnt-listpicker-item-selected {
+  border: 2px solid #67a7e3;
+  padding: 0;
+}
+
+.qnt-listpicker-item-selected .qnt-listpicker-item-title {
+  background-color: #67a7e3;
+  color: white;
+}
+
+/* Styles used to make anchor-looking buttons. */
+
+.qnt-anchor-button {
+  text-decoration: underline;
+  color: blue;
+}
+
+.qnt-anchor-button-active {
+  color: red;
+}
+
+.qnt-anchor-button-disabled {
+  text-decoration: none;
+  color: #666;
+}
+
+.qnt-next-button, .qnt-previous-button {
+  cursor: pointer;
+}
+
+
+</style>
+</head>
+<body>
+<blockquote>
+<div class="qnt-view">
+<div class="qnt">
+<div class="qnt-items">
+<div title="home1" id="qnt0-item0" class="qnt-item qnt-item-selected">
+<div class="qnticon"><img src="/qt/images/defaultIcon.gif"></div>
+<div class="qnt-item-title">x</div></div>
+<div title="Web Page - A standard web page" id="qnt0-item1" class="qnt-item">
+<div class="qnticon"><img src="/qt/images/defaultIcon.gif"></div>
+<div class="qnt-item-title">Y</div></div>
+
+<div title="Announcements - A mini-blog of announcements" id="qnt0-item2" class="qnt-item">
+<div class="qnticon"><img src="/qt/images/defaultIcon.gif"></div>
+<div class="qnt-item-title">Z</div></div>
+<div title="File Cabinet - A place for file storage" id="qnt0-item3" class="qnt-item">
+<div class="qnticon"><img src="/qt/images/defaultIcon.gif"></div>
+<div class="qnt-item-title">W</div></div>
+<div title="List - Create lists for tracking a variety of things" id="qnt0-item4" class="qnt-item">
+<div class="qnticon"><img src="/qt/images/defaultIcon.gif"></div>
+<div class="qnt-item-title">Q</div></div>
+<div title="home - likeit" id="qnt0-item5" class="qnt-item">
+<div class="qnticon"><img src="/qt/images/defaultIcon.gif"></div>
+<div class="qnt-item-title">R</div></div>
+<div title="home" id="qnt0-item6" class="qnt-item">
+
+<div class="qnticon"><img src="/qt/images/defaultIcon.gif"></div>
+<div class="qnt-item-title">S</div></div>
+<div style="clear: both;"></div>
+<div>
+<div style="float:left;width:95%;background:#99C0C0;" ><strong>&nbsp;&nbsp;&nbsp;<a href="" style="text-decoration:none;color:#000;">‹ Prev</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="" style="text-decoration:none;color:#000;"    >Next ›&nbsp;&nbsp;&nbsp;</a></strong></div></div></div>
+<p>&nbsp;</p>
+<br />
+<div style="background: none repeat scroll 0% 0% rgb(153, 192, 192); width: 95%;">
+<strong>&nbsp;&nbsp;&nbsp;High Level Dimensions</strong> (<i>&raquo;time, &raquo;gain, &raquo;depth, &raquo;indicator, &raquo;two in one)</i>
+
+</div>
+<br>
+<div  id="dimensions" class="left">
+<label for="dimensions"><strong >Simple 3 Level Dimensions</strong></label>
+<img src="https://chart.googleapis.com/chart?cht=s&chd=s:984sttvuvkQIBLKNCAIi,DEJPgq0uov17zwopQODS,AFLPTXaflptx159gsDrn&chxt=x,y,r&chxr=0,0,1000000,250000|1,0,60|2,0,5000&chxs=0N*e*,000000|1N*cUSD*Mil,FF0000|2N*sz2*,0000FF&chs=340x180" />
+</div>
+
+<br />
+</blockquote>
+<table><tr><td>
+<div class="left">
+<span>Do somthing like:</span>
+<ul>
+<li>Step 1:choose dimensions</li>    
+
+<li>Step 2:make a data file</li>
+<li>Step 3:plot your data file</li>
+<li>Step 4:choose result form</li>
+<li>Step 5:download results</li>
+</ul>
+</div>
+</td><td>
+<div class="right">
+<span>Or somthing like that:</span>
+<ul>
+<li>Step 1:upload portfolio csv</li>    
+
+<li>Step 2:compare dayly</li>    
+<li>Step 5:download performance hirarcy</li>
+<li>Step 5:download symbols flow <br />
+
+</ul>
+</div>
+</td><td>
+<div class="left">
+<div>Real Live examples:</div>
+<ul>
+<li><a href="http://localhost/qt/images/examples/gallary_0.png">Example 1</a></li>
+<li><a href="http://localhost/qt/images/examples/gallary_1.png">Example 2</a></li>
+
+<li><a href="http://localhost/qt/images/examples/gallary_2.png">Example 3</a></li>
+<li><a href="http://localhost/qt/images/examples/gallary_3.png">Example 4</a></li>
+<li><a href="http://localhost/qt/images/examples/gallary_4.png">Example 5</a></li>   
+</ul>
+
+</div>
+</td></tr></table>
+<p><br /><br /></p>
+
+
+<blockquote>
+<div style="background: none repeat scroll 0% 0% rgb(153, 192, 192); width: 95%;">
+<strong>&nbsp;&nbsp;&nbsp;Data suitable for Multistage Correlation sampling Used in data file</strong></div>
+
+<br />
+<table width=100% cellpading=1 border=1 align="left">
+<tbody  valign='top'>
+<tr><td valign='top' colspan=3>
+</strong>
+</p></td></tr>
+<tr><td valign='top'><div>
+<ul>
+<li>1y fwd P/E</li>
+<li>Quote change (%)</li>
+<li>Price to book</li>
+<li>Price to sales</li>
+
+<li>Last price</li>
+<li>EPS</li>
+</ul>
+</div>
+</td>
+<td>
+<div>
+<ul>
+<li>LT debt/assets (Recent yr) (%)</li>
+<li>LT debt/assets (Recent qtr) (%)</li>
+<li>Total debt/assets (Recent yr) (%)</li>
+<li>Total debt/assets (Recent qtr) (%)</li>
+
+<li>LT debt/equity (Recent yr) (%)</li>
+<li>LT debt/equity (Recent qtr) (%)</li>
+<li>Total debt/equity (Recent yr) (%)</li>
+<li>Total debt/equity (Recent qtr) (%)</li>
+<li>Interest coverage</li>
+</ul>
+</div>
+</td>
+<td>
+
+<div>
+<ul>
+
+<li>Gross margin (%)</li>
+<li>EBITDA margin (%)</li>
+<li>Operating margin (%)</li>
+<li>Net profit margin (%)</li>
+<li>5y net income growth rate</li>
+<li>5y revenue growth rate</li>
+<li>10y revenue growth rate</li>
+<li>5y EPS growth rate</li>
+<li>10y EPS growth rate</li>
+
+</ul>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div>
+<ul>
+<li>Div recent quarter</li>
+<li>Div next quarter</li>
+<li>Div per share (Recent yr)</li>
+<li>Div rate indicated annual</li>
+<li>Div per share</li>
+
+<li>Div yield (%)</li>
+<li>Div from cash flow</li>
+<li>Book value/share</li>
+<li>Cash/share</li>
+<li>Current ratio</li>
+</ul>
+</div>
+</td>
+<td>
+<div class='left'>
+<ul><li>Beta</li>
+
+<li>Float</li>
+<li>Institutional percent held</li>
+<li>Volume</li>
+<li>Average volume</li></ul>
+</div>
+</td>
+<td>
+<div >
+<ul>
+<li>Return on investment (TTM) (%)</li>
+<li>Return on investment (5 yr avg) (%)</li>
+
+<li>Return on investment (Recent yr) (%)</li>
+<li>Return on assets (TTM) (%)</li>
+<li>Return on assets (5 yr avg) (%)</li>
+<li>Return on assets (Recent yr) (%)</li>
+<li>Return on equity (TTM) (%)</li>
+<li>Return on equity (5 yr avg) (%)</li>
+<li>Return on equity (Recent yr) (%)</li></ul>
+</div>
+</td>
+</tr>
+
+<tr>
+<td colspan=3>
+<div class="left">
+<ul><li>Quote change (%)</li>
+<li>52w high</li>
+<li>52w low</li>
+<li>52w price change (%)</li>
+<li>50d avg price</li>
+<li>150d avg price</li>
+<li>200d avg price</li>
+
+<li>13w price change (%)</li>
+<li>26w price change (%)</li>
+<li>Market cap</li>
+<li>P/E ratio</li>
+<li>1y fwd P/E</li>
+</ul>
+</div>
+</td>
+</tr>
+
+</tbody></table>
+</div>   
+
+</blockquote>
+
+
+</body>
+</html>
+

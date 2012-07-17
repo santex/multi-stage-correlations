@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="MHeapx">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../eclipse"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="MHeapx.classpath">
+        <pathelement location="bin"/>
+        <pathelement location="lib/jcommon-1.0.0.jar"/>
+        <pathelement location="lib/jfreechart-1.0.1.jar"/>
+        <pathelement location="lib/mysql-connector-java-5.0.7-bin.jar"/>
+        <pathelement location="lib/servlet-api-2.5.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="bin"/>
+        <copy includeemptydirs="false" todir="bin">
+            <fileset dir="src">
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.java"/>
+                <exclude name="com/algo/test/IframeGplot.java"/>
+                <exclude name="com/algo/test/FibonocciRectanglesx.java"/>
+                <exclude name="org/python/util/PyServlet.java"/>
+                <exclude name="org/python/util/ReadlineConsole.java"/>
+                <exclude name="com/algo/test/Deamon.java"/>
+                <exclude name="com/algo/test/FibonocciRectangles.java"/>
+                <exclude name="org/apache/oro/text/regex/"/>
+                <exclude name="org/python/compiler/"/>
+                <exclude name="org/python/core/"/>
+                <exclude name="org/python/modules/"/>
+                <exclude name="org/python/modules/sre/"/>
+                <exclude name="org/python/parser/"/>
+                <exclude name="org/python/rmi/"/>
+                <exclude name="org/python/util/"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="bin"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="bin" source="${source}" target="${target}">
+            <src path="src"/>
+            <exclude name="com/algo/test/IframeGplot.java"/>
+            <exclude name="com/algo/test/FibonocciRectanglesx.java"/>
+            <exclude name="org/python/util/PyServlet.java"/>
+            <exclude name="org/python/util/ReadlineConsole.java"/>
+            <exclude name="com/algo/test/Deamon.java"/>
+            <exclude name="com/algo/test/FibonocciRectangles.java"/>
+            <exclude name="org/apache/oro/text/regex/"/>
+            <exclude name="org/python/compiler/"/>
+            <exclude name="org/python/core/"/>
+            <exclude name="org/python/modules/"/>
+            <exclude name="org/python/modules/sre/"/>
+            <exclude name="org/python/parser/"/>
+            <exclude name="org/python/rmi/"/>
+            <exclude name="org/python/util/"/>
+            <classpath refid="MHeapx.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="URLConnectionCustom">
+        <java classname="com.algo.test.URLConnectionCustom" failonerror="true" fork="yes">
+            <classpath refid="MHeapx.classpath"/>
+        </java>
+    </target>
+    <target name="MagicSquareExample">
+        <java classname="Jama.examples.MagicSquareExample" failonerror="true" fork="yes">
+            <classpath refid="MHeapx.classpath"/>
+        </java>
+    </target>
+    <target name="TableRenderDemo">
+        <java classname="com.messingarround.TableRenderDemo" failonerror="true" fork="yes">
+            <classpath refid="MHeapx.classpath"/>
+        </java>
+    </target>
+    <target name="ScopeDialog">
+        <java classname="com.multistage.correlations.gui.ScopeDialog" failonerror="true" fork="yes">
+            <classpath refid="MHeapx.classpath"/>
+        </java>
+    </target>
+    <target name="ListDemo (2)">
+        <java classname="com.multistage.correlations.gui.ListDemo" failonerror="true" fork="yes">
+            <classpath refid="MHeapx.classpath"/>
+        </java>
+    </target>
+    <target name="Converter (1)">
+        <java classname="com.multistage.correlations.gui.Converter" failonerror="true" fork="yes">
+            <classpath refid="MHeapx.classpath"/>
+        </java>
+    </target>
+    <target name="IndicatorSelect (1)">
+        <java classname="com.multistage.correlations.gui.IndicatorSelect" failonerror="true" fork="yes">
+            <classpath refid="MHeapx.classpath"/>
+        </java>
+    </target>
+    <target name="UserToolBar">
+        <java classname="com.multistage.correlations.gui.UserToolBar" failonerror="true" fork="yes">
+            <classpath refid="MHeapx.classpath"/>
+        </java>
+    </target>
+    <target name="Indicator (1)">
+        <java classname="com.multistage.correlations.gui.Indicator" failonerror="true" fork="yes">
+            <classpath refid="MHeapx.classpath"/>
+        </java>
+    </target>
+    <target name="URLMonitorPanelSet (1)">
+        <java classname="com.multistage.correlations.gui.URLMonitorPanelSet" failonerror="true" fork="yes">
+            <classpath refid="MHeapx.classpath"/>
+        </java>
+    </target>
+    <target name="TumbleItem">
+        <java classname="sun.applet.AppletViewer" dir="." failonerror="true" fork="yes">
+            <arg line="TumbleItem.html"/>
+            <classpath refid="MHeapx.classpath"/>
+        </java>
+    </target>
+    <target name="FileUpload (1)">
+        <java classname="com.multistage.correlations.gui.FileUpload" failonerror="true" fork="yes">
+            <classpath refid="MHeapx.classpath"/>
+        </java>
+    </target>
+    <target name="Main (5)">
+        <java classname="com.multistage.correlations.gui.Main" failonerror="true" fork="yes">
+            <classpath refid="MHeapx.classpath"/>
+        </java>
+    </target>
+    <target name="SummaryPad (2)">
+        <java classname="com.multistage.correlations.clcontrol.SummaryPad" failonerror="true" fork="yes">
+            <classpath refid="MHeapx.classpath"/>
+        </java>
+    </target>
+    <target name="TimerExample (1)">
+        <java classname="com.multistage.correlations.gui.TimerExample" failonerror="true" fork="yes">
+            <classpath refid="MHeapx.classpath"/>
+        </java>
+    </target>
+    <target name="Login">
+        <java classname="com.multistage.correlations.gui.LoginDemo" failonerror="true" fork="yes">
+            <classpath refid="MHeapx.classpath"/>
+        </java>
+    </target>
+    <target name="Rule">
+        <java classname="com.multistage.correlations.gui.Rule" failonerror="true" fork="yes">
+            <classpath refid="MHeapx.classpath"/>
+        </java>
+    </target>
+    <target name="TestMatrix">
+        <java classname="Jama.test.TestMatrix" failonerror="true" fork="yes">
+            <classpath refid="MHeapx.classpath"/>
+        </java>
+    </target>
+</project>
